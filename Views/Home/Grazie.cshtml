@@ -1,0 +1,34 @@
+@using Microsoft.EntityFrameworkCore
+@model DBContext
+
+@{
+
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Grazie</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>grazie per la prenotazione</h1>
+    <h2>ecco l'elenco delle persone prenotate</h2>
+    <table class ="table table-bordered table-striped table-sm">
+        <thead>
+            <tr><th>Nome</th><th>Email</th><th>Data</th>
+        </thead>
+        <tbody>
+            @foreach (Prenotazione p  in Model.Prenotazioni)
+            {
+                <tr>
+                    <td>@p.Nome</td>
+                    <td>@p.Email</td>
+                    <td>@p.DataPrenotazione</td>
+                    <td>@Html.ActionLink("Cancella","Cancella",new {Id=p.PrenotazioneId})</td>
+                     <td>@Html.ActionLink("Modifica","Modifica",new {Id=p.PrenotazioneId})</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>
+

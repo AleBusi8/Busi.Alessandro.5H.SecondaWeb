@@ -1,0 +1,26 @@
+@model DBContext
+
+
+@{
+    
+    ViewData["Title"] ="Grazie";
+}
+
+<!<div class="text-center">
+    <h1 class="display-4">Ecco l'elenco delle persone prenotate!</h1>
+    
+    
+    <table class="table table-bordered table-striped table-sm">
+        <thead><tr><th>Nome</th><th>Email</th><th>Data Prenotazione</th></tr></thead>
+        <tbody>
+            @foreach(Prenotazione p in Model.Prenotazioni)
+            {
+            <tr><td>@p.Nome</td><td>@p.Email</td><td>@p.DataPrenotazione</td>
+            <td></td>
+            <td>@Html.ActionLink("cancella","Cancella", "Home", new{id=p.Id}, null)</td>
+            <td>@Html.ActionLink("Modifica","Modifica", "Home", new {Id=p.Id})</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
