@@ -12,6 +12,6 @@ Dopo aver effettuato la propria prenotaaione si può vedere anche l'elenco delle
 * *Il sito è disponibile su Azure al seguente Link https://busialessandrosecondaweb.azurewebsites.net/#*
 * *Il sito è stato realizzato con il seguente template https://html5up.net/story*
 
-
+### Schermata Home:
 ![](Foto3.png)
 
