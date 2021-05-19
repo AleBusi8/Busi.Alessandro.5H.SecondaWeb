@@ -4,7 +4,9 @@
 ovviamente prima di prenotarsi bisogna effettuare il login al sito , 
 però se non si ha un account bisogna registrarsi per creare un nuovo account*
 
-### Funzionalità
+### Funzionalità:
+*dss
+*assas
 
 
 ![](Foto3.png)
