@@ -38,7 +38,8 @@ namespace Busi.Alessandro._5H.SecondaWeb.Controllers
             return View();
         }
 
-         [HttpGet]
+        [Authorize]
+        [HttpGet]
          public IActionResult Elenco()
         {
             var db= new DBContext();
@@ -87,6 +88,7 @@ namespace Busi.Alessandro._5H.SecondaWeb.Controllers
             return NotFound();
         }
 
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();
@@ -125,7 +127,7 @@ namespace Busi.Alessandro._5H.SecondaWeb.Controllers
             return View();
         } 
 
-         
+         [Authorize]
          [HttpPost]
          public IActionResult Upload(CreatePost post)
         {

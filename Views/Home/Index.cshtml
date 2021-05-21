@@ -11,7 +11,13 @@
 							<h1>Registrazione</h1>
 							<p class="major">Qui potrai effettuare il <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a> , ma se ancora non ti sei registrato effettua la <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Registra"> Registrazione </a>qui. Se vuoi uscire dal account , clicca qui su <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="LogOut">LogOut</a>.</p>
 							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+								<li><a class="button big wide smooth-scroll-middle" asp-area="" asp-controller="Home" asp-action="Prenota">Prenota</a></li>
+							</ul>
+							<ul class="actions stacked">
+								<li><a class="button big wide smooth-scroll-middle" asp-area="" asp-controller="Home" asp-action="Upload">Upload</a></li>
+							</ul>
+							<ul class="actions stacked">
+								<li><a class="button big wide smooth-scroll-middle" asp-area="" asp-controller="Home" asp-action="Elenco">Elenco</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -23,7 +29,7 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>Primo stemma</h2>
-							<p>venne creato il celebre "lupetto" nero stilizzato con l'occhio rosso, 
+							<p>Venne creato il celebre "lupetto" nero stilizzato con l'occhio rosso, 
 								che dal 1978 al 1980 compariva incorniciato da due cerchi concentrici, 
 								uno giallo e uno rosso; nel corso degli anni furono ideate nuove varianti 
 								di questo stemma: quella in uso nelle divise dal 1980 al 1991 vide un lupetto 
@@ -56,7 +62,7 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Nuovo stemma</h2>
-							<p>Questo è l'ultimo stemma utilizzato dalla Roma. Da qui puoi effettuare la <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Prenota">Prenotazione</a> .</p>
+							<p>Questo è l'ultimo stemma utilizzato dalla Roma, designato proprio dalla nuova proprietà statunitense.</p>
 							<ul class="actions stacked">
 								<li><a href="#" class="button">Torna su</a></li>
 							</ul>
@@ -305,7 +311,8 @@
 								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; Realizzato da: Alessandro Busi</a>.</p>
+							
+							<p>&copy; Realizzato da: Alessandro Busi - <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>.</p>
 						</div>
 					</footer>
 
